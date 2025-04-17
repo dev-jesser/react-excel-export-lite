@@ -18,6 +18,8 @@ Perfect for simple apps, dashboards, and internal tools where you just want to e
 
 ## 📦 Installation
 
+*Note: coming soon - not yet published*
+
 ```bash
 npm install react-excel-export-lite exceljs
 ```
