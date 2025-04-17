@@ -1,0 +1,42 @@
+{
+  "name": "react-excel-export-lite",
+  "version": "1.0.0",
+  "description": "A lightweight React hook for exporting data to Excel using exceljs",
+  "main": "dist/useExcelExporter.js",
+  "module": "dist/useExcelExporter.js",
+  "types": "dist/useExcelExporter.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "peerDependencies": {
+    "exceljs": "^4.3.0",
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "exceljs": "^4.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "vite": "^6.3.1",
+    "vitest": "^3.1.1"
+  },
+  "keywords": [
+    "excel",
+    "export",
+    "react",
+    "exceljs",
+    "hook",
+    "xlsx",
+    "react-excel"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
