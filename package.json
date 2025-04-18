@@ -2,20 +2,22 @@
   "name": "react-excel-export-lite",
   "version": "1.0.0",
   "description": "A lightweight React hook for exporting data to Excel using exceljs",
-  "main": "dist/useExcelExporter.js",
-  "module": "dist/useExcelExporter.js",
-  "types": "dist/useExcelExporter.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc",
+    "build": "tsc && rollup -c",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
     "test": "vitest",
     "test:ui": "vitest --ui"
   },
   "peerDependencies": {
-    "exceljs": "^4.3.0",
     "react": ">=17"
   },
   "devDependencies": {
@@ -26,7 +28,8 @@
     "react-dom": "^18.2.0",
     "typescript": "^5.0.0",
     "vite": "^6.3.1",
-    "vitest": "^3.1.1"
+    "vitest": "^3.1.1",
+    "rollup-plugin-typescript2": "^0.36.0"
   },
   "keywords": [
     "excel",
@@ -35,8 +38,20 @@
     "exceljs",
     "hook",
     "xlsx",
-    "react-excel"
+    "react-excel",
+    "react-hook"
   ],
-  "author": "Your Name",
-  "license": "MIT"
+  "author": "dev-jesser",
+  "license": "MIT",
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/dev-jesser/react-excel-export-lite"
+  },
+  "bugs": {
+    "url": "https://github.com/dev-jesser/react-excel-export-lite/issues"
+  },
+  "homepage": "https://github.com/dev-jesser/react-excel-export-lite#readme",
+  "dependencies": {
+    "exceljs": "^4.3.0"
+  }
 }
